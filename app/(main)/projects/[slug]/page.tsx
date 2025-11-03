@@ -2,16 +2,16 @@ import { notFound } from "next/navigation";
 
 const projects = [
 	{
-		title: "Portfolio Website",
-		slug: "portfolio-website",
+		title: "bookingtogo",
+		slug: "btg",
 		description:
 			"A modern, fast portfolio built using Next.js 15, Tailwind CSS, and TypeScript.",
 		content:
 			"This project showcases my skills in frontend development and responsive UI design. It’s fully optimized for SEO and performance.",
 	},
 	{
-		title: "E-Commerce Dashboard",
-		slug: "ecommerce-dashboard",
+		title: "Kelas Pintar",
+		slug: "kp",
 		description:
 			"A React-based admin dashboard for managing products and orders.",
 		content:

@@ -14,7 +14,7 @@ const projects = [
 ];
 
 export const metadata = {
-	title: "Projects | MyPortfolio",
+	title: "Projects | Jonathan Tri.",
 	description: "View all my latest projects and works.",
 };
 
