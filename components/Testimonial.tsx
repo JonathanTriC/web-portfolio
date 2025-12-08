@@ -11,15 +11,15 @@ export default function Testimonial() {
 		},
 		{
 			quote:
-				"Outstanding experience from start to finish. The team went above and beyond to ensure our success.",
-			author: "Marcus Chen",
-			position: "CTO at TechFlow",
+				"Working with Jonathan has been a really enjoyable experience during my time as QA. He’s a proactive and communicative mobile developer who’s always open to feedback and fast in fixing issues. I also appreciate how he likes to research new methods or ideas to make our work better. His consistency and clarity truly support a smoother collaboration between dev and QA.",
+			author: "Hanifah Sholihat",
+			position: "Quality Assurance at bookingtogo",
 		},
 		{
 			quote:
-				"Game-changing solution that transformed how we operate. Highly recommend to any growing business.",
-			author: "Sarah Williams",
-			position: "VP of Operations at CloudScale",
+				"Working with Jonathan always feels effortless. He communicates clearly, understands needs quickly, and delivers fast without ever compromising quality. Even when the requirements get complicated, he stays calm and consistently finds the best solution.",
+			author: "Destha Mukti",
+			position: "UI/UX Designer at bookingtogo",
 		},
 	];
 

@@ -8,33 +8,7 @@ import ScrollTextGsap from "@/components/ScrollTextGSAP";
 import Testimonial from "@/components/Testimonial";
 import TypewriterAnimation from "@/components/TypewriterAnimation";
 import Image from "next/image";
-
-const projects = [
-	{
-		index: 0,
-		href: "/projects/btg",
-		image: "/images/btg.png",
-		projectName: "bookingtogo",
-	},
-	{
-		index: 1,
-		href: "/projects/kp",
-		image: "/images/kp.jpeg",
-		projectName: "Kelas Pintar",
-	},
-	{
-		index: 2,
-		href: "/projects/scenebinge",
-		image: "/images/scenebinge.jpeg",
-		projectName: "Scenebinge",
-	},
-	{
-		index: 3,
-		href: "/projects/nomie",
-		image: "/images/nomie.jpeg",
-		projectName: "Nomie",
-	},
-];
+import { homeProjects } from "../data/home/HomeData";
 
 export default function HomePage() {
 	return (
@@ -82,10 +56,10 @@ export default function HomePage() {
 						{/* Email */}
 						<div data-aos="zoom-in-right" className="text-sm space-y-1">
 							<a
-								href="mailto:jonathantric@gmail.com"
+								href="mailto:hello@jonathantri.com"
 								className="flex w-full items-center justify-center md:justify-start gap-2 hover:text-neon transition"
 							>
-								📧 <span>jonathantric@gmail.com</span>
+								📧 <span>hello@jonathantri.com</span>
 							</a>
 						</div>
 
@@ -203,7 +177,7 @@ export default function HomePage() {
 
 				<div className="my-8 w-screen px-5 md:px-52">
 					<div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-5">
-						{projects?.map((item) => (
+						{homeProjects?.map((item) => (
 							<ProjectCard
 								key={item?.index}
 								index={item?.index}

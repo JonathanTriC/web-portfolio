@@ -32,14 +32,14 @@ export default function Header() {
 						<Link href="/" className="hover:text-neon transition">
 							Home
 						</Link>
-						<Link href="#about" className="hover:text-neon transition">
+						<Link href="/about" className="hover:text-neon transition">
 							About
 						</Link>
-						<Link href="#projects" className="hover:text-neon transition">
+						<Link href="/projects" className="hover:text-neon transition">
 							Projects
 						</Link>
 						<Link
-							href="#contact-me"
+							href="/#contact-me"
 							className="hover:text-neon hover:border-neon hover:px-8 transition-all px-6 py-4 border rounded-full border-emerald-100"
 						>
 							Contact Me
@@ -68,21 +68,21 @@ export default function Header() {
 							Home
 						</Link>
 						<Link
-							href="#about"
+							href="/about"
 							className="hover:text-neon transition text-lg"
 							onClick={toggleMenu}
 						>
 							About
 						</Link>
 						<Link
-							href="#projects"
+							href="/projects"
 							className="hover:text-neon transition text-lg"
 							onClick={toggleMenu}
 						>
 							Projects
 						</Link>
 						<Link
-							href="#contact-me"
+							href="/#contact-me"
 							className="hover:text-neon hover:border-neon transition-all px-8 py-4 border rounded-full border-emerald-100 text-lg"
 							onClick={toggleMenu}
 						>

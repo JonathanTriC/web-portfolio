@@ -1,5 +1,8 @@
+"use client";
+
 import { useState } from "react";
-import { Mail, MapPin } from "lucide-react";
+import { File, Mail, MapPin } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
 	const [formData, setFormData] = useState({
@@ -19,9 +22,38 @@ export default function ContactForm() {
 		});
 	};
 
-	const handleSubmit = () => {
+	const handleSubmit = (e: React.FormEvent) => {
+		e.preventDefault();
+
 		console.log("Form submitted:", formData);
-		alert("Message sent successfully!");
+
+		emailjs
+			.send(
+				process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+				process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+				{
+					firstName: formData.firstName,
+					lastName: formData.lastName,
+					email: formData.email,
+					subject: formData.subject,
+					message: formData.message,
+				},
+				process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+			)
+			.then(() => {
+				alert("Message sent successfully!");
+				setFormData({
+					firstName: "",
+					lastName: "",
+					email: "",
+					subject: "",
+					message: "",
+				});
+			})
+			.catch((err) => {
+				console.error("Email error:", err);
+				alert("Failed to send message");
+			});
 	};
 
 	return (
@@ -55,7 +87,7 @@ export default function ContactForm() {
 								<div>
 									<h3 className="text-gray-300 text-sm sm:text-base mb-1">Email</h3>
 									<p className="text-white text-base sm:text-lg">
-										jonathantric@gmail.com
+										hello@jonathantri.com
 									</p>
 								</div>
 							</div>
@@ -67,6 +99,20 @@ export default function ContactForm() {
 								<div>
 									<h3 className="text-gray-300 text-sm sm:text-base mb-1">Location</h3>
 									<p className="text-white text-base sm:text-lg">Jakarta, Indonesia</p>
+								</div>
+							</div>
+
+							<div className="flex items-start gap-4">
+								<div className="bg-neon rounded-full p-3 shrink-0">
+									<File className="w-5 h-5 sm:w-6 sm:h-6 text-black" />
+								</div>
+								<div>
+									<h3 className="text-gray-300 text-sm sm:text-base mb-1">
+										Curriculum Vitae
+									</h3>
+									<a href="#" className="text-neon text-base underline sm:text-lg">
+										Download My CV
+									</a>
 								</div>
 							</div>
 						</div>
@@ -176,7 +222,7 @@ export default function ContactForm() {
 							{/* Submit Button */}
 							<button
 								type="submit"
-								className="w-full bg-neon hover:bg-neon text-black font-semibold py-3 sm:py-4 px-6 rounded-lg transition-colors duration-300"
+								className="w-full bg-neon hover:bg-neon/80 hover:scale-105 text-black font-semibold py-3 sm:py-4 px-6 rounded-lg transition duration-300"
 							>
 								Send Message
 							</button>
