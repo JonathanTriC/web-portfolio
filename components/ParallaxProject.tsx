@@ -37,10 +37,11 @@ export default function ParallaxProject({
 	return (
 		<div
 			ref={container}
-			className="min-h-screen flex items-center justify-center sticky top-0 mx-6"
+			className="h-screen flex items-center justify-center sticky mx-6"
+			style={{ top: `calc(20px + ${i * 25}px)` }}
 		>
 			<motion.div
-				style={{ scale, top: `calc(-5vh + ${i * 25}px)` }}
+				style={{ scale }}
 				className="
           flex flex-col relative mx-auto h-auto md:h-[600px] w-full md:w-[1200px] origin-top
           rounded-2xl transition-all duration-300

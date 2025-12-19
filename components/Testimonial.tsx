@@ -114,7 +114,7 @@ export default function Testimonial() {
 							</svg>
 						</div>
 
-						<div className="h-98 overflow-y-auto">
+						<div className="h-102 md:h-98 overflow-y-auto">
 							{/* Testimonial Text */}
 							<blockquote className="text-lg md:text-2xl text-center md:text-right font-medium text-gray-300 mb-8 leading-relaxed">
 								{current.quote}

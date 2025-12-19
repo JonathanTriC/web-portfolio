@@ -41,9 +41,13 @@ export default function About() {
 								solutions that make a difference for users.
 							</p>
 							<div className="flex flex-wrap gap-4 mb-6">
-								<button className="bg-neon text-black px-6 py-3 rounded-lg font-semibold hover:bg-neon/90 transition">
+								<a
+									href="https://drive.google.com/file/d/17EARFA_Zxmpc-KZI2sAednU0NSgwqlLw/view?usp=sharing"
+									target="_blank"
+									className="bg-neon text-black px-6 py-3 rounded-lg font-semibold hover:bg-neon/90 transition"
+								>
 									Download CV
-								</button>
+								</a>
 							</div>
 						</div>
 						<div data-aos="zoom-in-right" className="relative">

@@ -326,7 +326,7 @@ const slugProjects = [
 		description: `An education technology (EdTech) app developed with React Native, focusing on an advanced Learning Management System (LMS) that supports schools across all levels — from elementary to high school.<br/>
 		As a B2B-focused product, Kelas Pintar collaborates with schools nationwide to enhance digital learning experiences.<br/>
 		It also offers B2C features like GURU (teacher assistance), TANYA (question & answer), SOAL (practice tests), and PTN (university preparation), providing a holistic ecosystem for students and educators alike.`,
-		homeImage: "/images/home-btg.png",
+		homeImage: "/images/home-kp.png",
 		links: [
 			{
 				index: 0,
@@ -532,7 +532,7 @@ const slugProjects = [
 		It’s a fun, visually engaging way for movie lovers to stay inspired and discover their next favorite film.`,
 		src: "/images/scenebinge.jpeg",
 		url: "/projects/scenebinge",
-		homeImage: "/images/home-btg.png",
+		homeImage: "/images/home-scenebinge.png",
 		links: [
 			{
 				index: 0,
@@ -648,7 +648,7 @@ const slugProjects = [
 		description: `A food discovery and recipe app developed with React Native, Go (Golang) for the backend, and PostgreSQL for data management.<br />
 		Integrated with TheMealDB API, Nomie helps users find meal ideas from around the world, filter recipes by ingredients or cuisines, and access detailed cooking instructions complete with video tutorials.<br/>
 		It’s designed to make global culinary exploration simple, educational, and deliciously inspiring.`,
-		homeImage: "/images/home-btg.png",
+		homeImage: "/images/home-nomie.png",
 		links: [
 			{
 				index: 0,

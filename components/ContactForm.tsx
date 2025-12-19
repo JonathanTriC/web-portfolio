@@ -110,7 +110,11 @@ export default function ContactForm() {
 									<h3 className="text-gray-300 text-sm sm:text-base mb-1">
 										Curriculum Vitae
 									</h3>
-									<a href="#" className="text-neon text-base underline sm:text-lg">
+									<a
+										href="https://drive.google.com/file/d/17EARFA_Zxmpc-KZI2sAednU0NSgwqlLw/view?usp=sharing"
+										target="_blank"
+										className="text-neon text-base underline sm:text-lg"
+									>
 										Download My CV
 									</a>
 								</div>

@@ -187,9 +187,9 @@ export default function HomePage() {
 							/>
 						))}
 					</div>
-					<TypewriterAnimation
+					{/* <TypewriterAnimation
 						strings={["and more groundbreaking projects are on the way"]}
-					/>
+					/> */}
 
 					<div className="mt-20">
 						<div className="text-3xl md:text-4xl lg:text-5xl text-right font-bold mb-3 md:mb-4">

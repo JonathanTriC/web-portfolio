@@ -26,7 +26,9 @@ export default function ExperienceItem({
 					<h3 className="text-xl font-bold text-gray-300 mb-1">{title}</h3>
 					<p className="text-neon">{company}</p>
 				</div>
-				<span className="bg-gray-800 px-4 py-1 rounded text-sm">{duration}</span>
+				<span className="bg-gray-800 px-4 py-1 mt-2 md:mt-0 rounded text-sm">
+					{duration}
+				</span>
 			</div>
 			<p className="text-gray-400 mb-4">{desc}</p>
 			<div className="flex flex-wrap gap-2">

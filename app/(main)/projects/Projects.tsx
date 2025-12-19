@@ -32,7 +32,11 @@ export default function Projects() {
 					</div>
 				</section>
 
-				<section ref={container} className="-mt-28 md:-mt-32">
+				<section
+					ref={container}
+					className="md:-mt-32 relative"
+					style={{ height: `${projects.length * 105}vh` }}
+				>
 					<div data-aos="fade-up">
 						{projects.map((project, i) => {
 							const targetScale = 1 - (projects.length - i) * 0.05;
