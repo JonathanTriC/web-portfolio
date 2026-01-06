@@ -42,7 +42,7 @@ export default function About() {
 							</p>
 							<div className="flex flex-wrap gap-4 mb-6">
 								<a
-									href="https://drive.google.com/file/d/17EARFA_Zxmpc-KZI2sAednU0NSgwqlLw/view?usp=sharing"
+									href="https://drive.google.com/file/d/1sHLeECuW8CMIMYEmTrs6NGXnbzhYGveZ/view?usp=sharing"
 									target="_blank"
 									className="bg-neon text-black px-6 py-3 rounded-lg font-semibold hover:bg-neon/90 transition"
 								>
