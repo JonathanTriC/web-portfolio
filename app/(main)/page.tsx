@@ -6,7 +6,6 @@ import Journey from "@/components/Journey";
 import ProjectCard from "@/components/ProjectCard";
 import ScrollTextGsap from "@/components/ScrollTextGSAP";
 import Testimonial from "@/components/Testimonial";
-import TypewriterAnimation from "@/components/TypewriterAnimation";
 import Image from "next/image";
 import { homeProjects } from "../data/home/HomeData";
 
@@ -44,7 +43,7 @@ export default function HomePage() {
 					>
 						<Image
 							src="/images/self-image.png"
-							alt="self-portrait"
+							alt="Jonathan Tri - Mobile Apps Developer"
 							fill
 							className="object-fit md:object-cover object-top"
 							priority
