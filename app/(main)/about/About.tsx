@@ -54,7 +54,7 @@ export default function About() {
 							<div className="aspect-square bg-gray-800 rounded-lg overflow-hidden">
 								<Image
 									src="/images/about-image.png"
-									alt="self-image-2"
+									alt="Jonathan Tri, Senior React Native Developer based in Jakarta, Indonesia"
 									fill
 									className="w-full h-full object-contain rounded-lg"
 								/>

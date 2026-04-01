@@ -29,11 +29,14 @@ export default function HomePage() {
 					>
 						<p className="text-sm md:text-base mb-2 text-gray-300">
 							Hey 👋, I’m a{" "}
-							<span className="text-neon font-medium">Mobile Apps Developer</span>
+							<span className="text-neon font-medium">React Native &amp; Mobile App Developer</span>
 						</p>
-						<h1 className="text-[2.5rem] sm:text-[3rem] md:text-[6rem] lg:text-[8rem] font-extrabold text-neon leading-tight">
-							JONATHAN TRI
+						<h1 className="text-[1.25rem] sm:text-[1.5rem] md:text-[2rem] font-semibold text-gray-200 leading-tight mb-1">
+							Senior React Native Developer
 						</h1>
+						<p aria-hidden="true" className="text-[2.5rem] sm:text-[3rem] md:text-[6rem] lg:text-[8rem] font-extrabold text-neon leading-tight">
+							JONATHAN TRI
+						</p>
 					</div>
 
 					{/* Image */}
@@ -65,10 +68,10 @@ export default function HomePage() {
 						{/* Description and Links */}
 						<div data-aos="zoom-in-left" className="max-w-lg">
 							<p className="text-xs sm:text-sm text-center md:text-right text-gray-300 leading-relaxed">
-								With 4+ years of hands-on experience in Mobile Development, I build
-								high-performance mobile applications that combine sleek design with
-								robust functionality. My focus is on creating reliable, maintainable,
-								and delightful user experiences across platforms.
+								I build high-performance React Native apps that scale. With 4+ years
+								shipping production apps for Kelas Pintar &amp; bookingtogo, I specialize
+								in TypeScript, clean architecture, and cross-platform solutions.
+								Based in Jakarta — available globally.
 							</p>
 
 							<div className="flex justify-center md:justify-end gap-6 mt-6 text-sm">
@@ -76,7 +79,7 @@ export default function HomePage() {
 									href="https://www.linkedin.com/in/jonathan-tri-christianto"
 									className="hover:text-neon transition"
 									target="_blank"
-									rel="noopener noreferrer"
+									rel="noopener noreferrer me"
 								>
 									LinkedIn
 								</a>
@@ -84,7 +87,7 @@ export default function HomePage() {
 									href="https://github.com/JonathanTriC?tab=repositories"
 									className="hover:text-neon transition"
 									target="_blank"
-									rel="noopener noreferrer"
+									rel="noopener noreferrer me"
 								>
 									GitHub
 								</a>

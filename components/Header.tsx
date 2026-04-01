@@ -20,7 +20,7 @@ export default function Header() {
 					<Link href="/" className="block hover:opacity-80 transition">
 						<Image
 							src="/images/jt-logo.png"
-							alt="logo"
+							alt="Jonathan Tri — React Native Developer"
 							width={40}
 							height={40}
 							priority
