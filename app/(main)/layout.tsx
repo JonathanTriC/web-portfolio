@@ -102,6 +102,45 @@ const jsonLd = {
 	},
 };
 
+const faqJsonLd = {
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	mainEntity: [
+		{
+			"@type": "Question",
+			name: "Are you available for hire as a React Native developer?",
+			acceptedAnswer: {
+				"@type": "Answer",
+				text: "Yes, I'm Jonathan Tri, a Senior React Native Developer with 4+ years of experience. I'm open to full-time roles, freelance projects, and contract engagements — both remote and Jakarta-based. Feel free to reach out at hello@jonathantri.com.",
+			},
+		},
+		{
+			"@type": "Question",
+			name: "What technologies do you specialize in?",
+			acceptedAnswer: {
+				"@type": "Answer",
+				text: "I specialize in React Native and TypeScript for cross-platform mobile development. I also have hands-on experience with Swift for iOS, Flutter, and clean architecture patterns. I've shipped production apps for ed-tech and travel platforms used by hundreds of thousands of users.",
+			},
+		},
+		{
+			"@type": "Question",
+			name: "What kind of mobile app projects have you worked on?",
+			acceptedAnswer: {
+				"@type": "Answer",
+				text: "I've led React Native development at Kelas Pintar (an Indonesian ed-tech platform) and bookingtogo (a travel tech company). My work includes migrating legacy JS codebases to TypeScript, building scalable mobile architectures, and leading small engineering teams.",
+			},
+		},
+		{
+			"@type": "Question",
+			name: "Do you work remotely?",
+			acceptedAnswer: {
+				"@type": "Answer",
+				text: "Yes. I'm based in Jakarta, Indonesia, but I'm available for fully remote opportunities worldwide. I have experience collaborating with distributed teams across different time zones.",
+			},
+		},
+	],
+};
+
 export default function Layout({ children }: { children: ReactNode }) {
 	return (
 		<html lang="en">
@@ -109,6 +148,10 @@ export default function Layout({ children }: { children: ReactNode }) {
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+				/>
+				<script
+					type="application/ld+json"
+					dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
 				/>
 			</head>
 			<body className="min-h-screen flex flex-col">
