@@ -65,6 +65,14 @@ export const metadata: Metadata = {
 	alternates: {
 		canonical: "https://jonathantri.com",
 	},
+	icons: {
+		icon: "/favicon.ico",
+		shortcut: "/favicon.ico",
+		apple: "/images/jt-logo.png",
+	},
+	other: {
+		thumbnail: "https://jonathantri.com/images/about-image.png",
+	},
 };
 
 const jsonLd = {

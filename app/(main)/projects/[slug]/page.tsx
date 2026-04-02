@@ -78,20 +78,22 @@ export default async function ProjectDetailPage({
 						</div>
 
 						{/* RIGHT */}
-						<div
-							data-aos="zoom-in-right"
-							className="md:w-1/2 flex justify-end items-center"
-						>
-							<div className="relative w-full max-w-xl">
-								<Image
-									src={project?.homeImage as string}
-									alt="home-icon"
-									width={800}
-									height={800}
-									className="object-contain w-full h-auto rounded-lg"
-								/>
+						{project?.homeImage && (
+							<div
+								data-aos="zoom-in-right"
+								className="md:w-1/2 flex justify-end items-center"
+							>
+								<div className="relative w-full max-w-xl">
+									<Image
+										src={project?.homeImage as string}
+										alt="home-icon"
+										width={800}
+										height={800}
+										className="object-contain w-full h-auto rounded-lg"
+									/>
+								</div>
 							</div>
-						</div>
+						)}
 					</div>
 				</section>
 
@@ -328,10 +330,10 @@ export default async function ProjectDetailPage({
 														<span className="text-neon font-bold">{`>`}</span>
 														<p className="text-gray-400">{desc}</p>
 													</div>
-											  ))
+												))
 											: items?.description && (
 													<p className="text-gray-400">{items.description}</p>
-											  )}
+												)}
 									</div>
 								</div>
 							))}

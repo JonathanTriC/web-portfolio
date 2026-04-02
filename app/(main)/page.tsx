@@ -45,12 +45,16 @@ export default function HomePage() {
 					<div
 						data-aos="zoom-in-up"
 						className="relative w-full h-[610px] sm:w-[300px] sm:h-[420px] md:w-[400px] md:h-[600px] lg:w-[500px] lg:h-[700px] mt-50 md:mt-18"
+						style={{
+							WebkitMaskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
+							maskImage: "linear-gradient(to bottom, black 70%, transparent 100%)",
+						}}
 					>
 						<Image
 							src="/images/self-image.png"
 							alt="Jonathan Tri - Mobile Apps Developer"
 							fill
-							className="object-fit md:object-cover object-top"
+							className="object-cover object-top"
 							priority
 						/>
 					</div>

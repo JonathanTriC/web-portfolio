@@ -5,6 +5,7 @@ import {
 	faGithub,
 	faGolang,
 	faGooglePlay,
+	faNpm,
 	faReact,
 } from "@fortawesome/free-brands-svg-icons";
 import {
@@ -13,19 +14,32 @@ import {
 	faCircleInfo,
 	faCode,
 	faCompass,
+	faCube,
+	faGlobe,
 	faHotel,
+	faLanguage,
 	faLayerGroup,
 	faPlane,
 	faPlaneUp,
 	faPlayCircle,
+	faRocket,
 	faSchool,
 	faSearch,
 	faStar,
+	faTerminal,
 	faTrain,
 	faUserGear,
 } from "@fortawesome/free-solid-svg-icons";
 
 const projects = [
+	{
+		title: "RNJet Boilerplate",
+		description: `A production-ready React Native boilerplate and CLI toolkit that bootstraps fully-configured apps in a single command.<br/>
+		Built with Clean Architecture, New Architecture (Fabric + JSI), i18next, MMKV, and React Navigation v7 — all wired up and ready to ship.<br/>
+		Published as an npm package (@jonathantri/rnjet), RNJet eliminates weeks of setup so teams can focus on building features from day one.`,
+		src: "/images/rnjet.png",
+		url: "/projects/rnjet",
+	},
 	{
 		title: "bookingtogo",
 		description: `A comprehensive React Native mobile application in the online travel industry, designed for booking flights, hotels, trains, tours, and even private jets.<br/>
@@ -757,6 +771,235 @@ const slugProjects = [
 		keyLearning: [],
 		projectShowcase: "/images/nomie.jpeg",
 		futureImprovements: [],
+	},
+	{
+		title: "RNJet Boilerplate",
+		slug: "rnjet",
+		description: `A production-ready React Native boilerplate and CLI toolkit that bootstraps fully-configured apps in a single command.<br/>
+		Built with Clean Architecture, New Architecture (Fabric + JSI), i18next, MMKV, and React Navigation v7 — all wired up and ready to ship.<br/>
+		Published as an npm package (@jonathantri/rnjet), RNJet eliminates weeks of setup so teams can focus on building features from day one.`,
+		// homeImage: "/images/home-rnjet.png",
+		links: [
+			{
+				index: 0,
+				show: true,
+				type: "git",
+				icon: faGithub,
+				text: "View on GitHub",
+				url: "https://github.com/jonathantric/rnjet-boilerplate/",
+			},
+			{
+				index: 1,
+				show: true,
+				type: "site",
+				icon: faGlobe,
+				text: "Visit Website",
+				url: "https://rnjet.jonathantri.com/",
+			},
+			{
+				index: 2,
+				show: true,
+				type: "npm",
+				icon: faNpm,
+				text: "View on npm",
+				url: "https://www.npmjs.com/package/@jonathantri/rnjet",
+			},
+		],
+		listStack: [
+			{
+				index: 0,
+				type: "fontawesome",
+				icon: faAndroid,
+				name: "Android",
+			},
+			{
+				index: 1,
+				type: "fontawesome",
+				icon: faApple,
+				name: "iOS",
+			},
+			{
+				index: 2,
+				type: "fontawesome",
+				icon: faReact,
+				name: "React Native",
+			},
+			{
+				index: 3,
+				type: "image",
+				icon: "/images/typescript.svg",
+				name: "TypeScript",
+			},
+			{
+				index: 4,
+				type: "fontawesome",
+				icon: faTerminal,
+				name: "CLI Tool",
+			},
+			{
+				index: 5,
+				type: "fontawesome",
+				icon: faNpm,
+				name: "npm Package",
+			},
+		],
+		keyFeatures: [
+			{
+				index: 0,
+				type: "fontawesome",
+				icon: faTerminal,
+				name: "Module Generator CLI",
+				description:
+					"Instantly scaffold modules, components, screens, and services with a single CLI command. Standard-compliant naming conventions are enforced automatically, keeping the codebase consistent from day one without any manual configuration.",
+			},
+			{
+				index: 1,
+				type: "fontawesome",
+				icon: faRocket,
+				name: "New Architecture (Fabric + JSI)",
+				description:
+					"Built from the ground up to support React Native's New Architecture — Fabric renderer and JSI bindings included out of the box. Near-native performance levels with direct C++ interop, no migration required.",
+			},
+			{
+				index: 2,
+				type: "fontawesome",
+				icon: faLayerGroup,
+				name: "Clean Architecture — Feature-Based Structure",
+				description:
+					"Enforced separation of concerns with a modular, feature-based folder structure. Domain, data, and UI layers are clearly separated — scales cleanly from solo projects to large teams without the codebase becoming chaotic.",
+			},
+			{
+				index: 3,
+				type: "fontawesome",
+				icon: faLanguage,
+				name: "i18n with i18next — Built In",
+				description:
+					"Full internationalization support with i18next and type-safe translation keys. English and Bahasa Indonesia included. Adding any new language takes just minutes — no additional setup needed.",
+			},
+			{
+				index: 4,
+				type: "fontawesome",
+				icon: faCube,
+				name: "MMKV Storage — Faster Than AsyncStorage",
+				description:
+					"Ultra-fast synchronous storage powered by MMKV with AES-256 encryption. No async/await complexity, no performance overhead — orders of magnitude faster than AsyncStorage for key-value data.",
+			},
+			{
+				index: 5,
+				type: "fontawesome",
+				icon: faCompass,
+				name: "React Navigation v7 — Pre-Configured",
+				description:
+					"Production-ready navigation with typed screens, nested stacks, and a custom useNavigate hook — fully wired and ready to extend. Supports deep linking and tab-based layouts out of the box.",
+			},
+		],
+		projectVision: [
+			"Every React Native project starts the same way — setting up navigation, configuring themes, wiring up an API layer, integrating storage, and adding internationalization. Developers routinely lose the first two weeks of every new project to this repetitive boilerplate work, before a single product feature is written.",
+			"RNJet was built to solve that exact problem. The goal was to create a single CLI command that bootstraps a fully production-ready React Native starter kit, with Clean Architecture, New Architecture support, i18next, MMKV, and React Navigation v7 all pre-configured and wired up. Not a minimal template, and not an over-opinionated framework — but the right set of tools for real production apps.",
+			"Beyond the boilerplate, RNJet ships with a module generator CLI that lets developers scaffold new features, screens, components, and services in seconds. Published as an npm package (@jonathantri/rnjet), the tool is open source and actively maintained, giving the React Native community a reliable, scalable starting point that grows with any team or project size.",
+		],
+		challenge: [
+			{
+				index: 0,
+				name: "Designing a Flexible yet Opinionated Architecture",
+				description:
+					"Most boilerplates either do too little — leaving everything to the developer — or too much, imposing decisions that are nearly impossible to override. Striking the right balance between pre-configured structure and developer freedom was the core design challenge throughout the build.",
+			},
+			{
+				index: 1,
+				name: "New Architecture Compatibility",
+				description:
+					"Supporting React Native's New Architecture (Fabric + JSI) required ensuring every library and native module in the stack was compatible. Many popular packages still had incomplete New Architecture support, requiring careful selection and validation of each dependency.",
+			},
+			{
+				index: 2,
+				name: "Building a Reliable CLI with Cross-Platform Support",
+				description:
+					"The module generator CLI needed to work reliably across macOS, Linux, and Windows environments — handling different file systems, shell environments, and platform-specific edge cases. Ensuring consistent templating and code generation across all platforms required significant testing and iteration.",
+			},
+		],
+		solution: [
+			{
+				index: 0,
+				name: "Curated, Production-Tested Tech Stack",
+				description:
+					"Each library in RNJet was hand-picked based on production use across real projects. The stack is opinionated enough to eliminate decision fatigue, but modular enough that developers can swap or extend any layer without fighting the boilerplate.",
+			},
+			{
+				index: 1,
+				name: "New Architecture First, Zero Migration",
+				description:
+					"RNJet was designed on New Architecture from day one, not retrofitted. All dependencies are validated for Fabric and JSI compatibility, so projects generated with RNJet never need a painful migration path.",
+			},
+			{
+				index: 2,
+				name: "TypeScript-First CLI with Automated Scaffolding",
+				description:
+					"The CLI was built with TypeScript and tested across multiple platforms. It generates fully typed, convention-compliant module scaffolding, reducing cognitive overhead and enforcing naming standards automatically — so the team stays consistent as the project grows.",
+			},
+		],
+		keyLearning: [
+			{
+				index: 0,
+				type: "fontawesome",
+				icon: faCode,
+				name: "Developer Tools Are Products",
+				description: [
+					"Building RNJet reinforced that CLI tools and boilerplates deserve the same product thinking as end-user apps.",
+					"Developer experience, clear documentation, sensible defaults, and intuitive commands are just as important as code quality.",
+					"A tool that developers enjoy using gets adopted; one that frustrates them gets abandoned regardless of technical merit.",
+				],
+			},
+			{
+				index: 1,
+				type: "fontawesome",
+				icon: faLayerGroup,
+				name: "Architecture Decisions Compound Over Time",
+				description: [
+					"Designing a starter kit forces you to think deeply about architectural decisions that most projects defer until it's too late.",
+					"Every structural choice in RNJet — folder organization, layer separation, module boundaries — was made knowing it would need to scale across many different project types and team sizes.",
+					"This experience deepened my appreciation for intentional architecture as a long-term force multiplier.",
+				],
+			},
+			{
+				index: 2,
+				type: "fontawesome",
+				icon: faStar,
+				name: "Open Source Requires Sustained Commitment",
+				description: [
+					"Publishing RNJet on npm and maintaining it as an open source project comes with responsibility beyond the initial release.",
+					"Keeping dependencies updated, responding to issues, writing clear documentation, and shipping improvements require ongoing effort.",
+					"This project gave me firsthand experience with what it takes to build and maintain an open source tool that others rely on.",
+				],
+			},
+		],
+		projectShowcase: "/images/rnjet.png",
+		futureImprovements: [
+			{
+				index: 0,
+				type: "fontawesome",
+				icon: faCode,
+				name: "Interactive CLI Mode",
+				description:
+					"Adding an interactive project initialization mode where developers can select features to include — state management library, authentication setup, analytics integration — making the boilerplate even more flexible for different project requirements.",
+			},
+			{
+				index: 1,
+				type: "fontawesome",
+				icon: faCode,
+				name: "Automated Testing Setup",
+				description:
+					"Integrating pre-configured Jest and Detox setups directly into the boilerplate, so projects start with a working test suite and E2E testing scaffolding — reducing the barrier to writing tests from the very beginning of a project.",
+			},
+			{
+				index: 2,
+				type: "fontawesome",
+				icon: faCode,
+				name: "Expanding UI Component Library",
+				description:
+					"Continuously adding more production-ready, highly customizable UI components to the boilerplate. The goal is to provide a comprehensive suite of pre-built elements out of the box so developers can assemble complex interfaces even faster.",
+			},
+		],
 	},
 ];
 
