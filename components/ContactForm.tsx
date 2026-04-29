@@ -111,7 +111,7 @@ export default function ContactForm() {
 										Curriculum Vitae
 									</h3>
 									<a
-										href="https://bit.ly/cv-jonathan-tri"
+										href="https://drive.google.com/file/d/1OySnrx-3O_MRu8WH9uqlOKjsh3NqckDP/view?usp=sharing"
 										target="_blank"
 										className="text-neon text-base underline sm:text-lg"
 									>
